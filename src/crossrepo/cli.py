@@ -8,6 +8,7 @@ import random
 import sys
 from pathlib import Path
 
+from . import __version__
 from .clues import make_clues
 from .layout import build as build_layout
 from .render import render_html, render_json, render_text
@@ -30,6 +31,7 @@ def main(argv: list[str] | None = None) -> int:
         prog="crossrepo",
         description="Turn a codebase into a crossword puzzle whose clues come from your own code.",
     )
+    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     parser.add_argument("root", nargs="?", default=".",
                         help="repository path to scan (default: current directory)")
     parser.add_argument("--words", type=int, default=24, metavar="N",

@@ -6,4 +6,4 @@ clues come from your own code: file paths, docstrings and reference
 counts. Pure standard library, zero dependencies.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"

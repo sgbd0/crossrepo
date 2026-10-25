@@ -1,5 +1,9 @@
 # CrossRepo
 
+[![CI](https://github.com/sgbd0/crossrepo/actions/workflows/ci.yml/badge.svg)](https://github.com/sgbd0/crossrepo/actions/workflows/ci.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 **Turn any codebase into a crossword puzzle.**
 
 CrossRepo scans a repository, mines its real identifiers - classes, functions,
