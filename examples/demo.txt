@@ -1,0 +1,58 @@
+CrossRepo - a crossword of its own code
+
+###################################################### 1 ############
+################## 2 ### 3  .  4  . ############ 5 ### . ############
+######### 6  .  .  .  . ###### . ######### 7 ### . ### . ############
+################## . ######### 8  .  9  .  .  .  .  .  . ############
+################## . ######### . ### . ### . ### . ### . ############
+#########10  .  .  .  . ###### . ### . ### . ### . ### . ######11 ###
+################## . ######### . ### . ### . ### . ### . ###### . ###
+################## . ############12 ###### . ### . ### . ###### . ###
+############13  .  .  .  .  .  .  .  .  .  .  .  .  .  . ###### . ###
+############ . ### . ############ . ############ . ######14 ### . ###
+###15  .  .  . ######16  .  .  .  .  .  .  .  .  . ###### . ### . ###
+############ . ################## . ###############17 ### . ### . ###
+18  .  .  .  .  .  .  . ###19  .  .  .  .  .  .  .  .  .  .  .  .  . 
+############ . ################## . ############### . ### . ### . ###
+############ . ######20 ######### . ############### . ### . #########
+###21  .  .  .  . ### . ######22  .  .  .  . ###### . ### . #########
+############ . ###### . ######### . ############### . ### . #########
+###23  .  .  .  .  .  .  .  .  .  .  . 24  .  . ### . ### . #########
+############ . ###### . ######### . ### . ######### . ###############
+25  .  .  .  .  .  .  .  .  .  .  . ### . ###26  .  .  . ############
+############ . ################## . ### . ######### . ###############
+############ . ################## . ### . ###########################
+###27  .  .  .  .  .  .  .  . ######### . ###########################
+
+Across
+    3. An identifier from this repo: 4 letters, starting with 'W' [4]
+    6. Referenced 24 times across this repository [5]
+    8. A function defined in src/crossrepo/words.py [9]
+   10. One of this repository's source modules [5]
+   13. A class defined in tests/test_render.py [15]
+   15. Referenced 15 times across this repository [4]
+   16. An identifier from this repo: 10 letters, starting with 'B' [10]
+   18. A class defined in tests/test_cli.py [8]
+   19. A class defined in tests/test_words.py [14]
+   21. Part of the identifier 'RepoFacts' in src/crossrepo/scan.py [5]
+   22. One of this repository's source modules [5]
+   23. An identifier from this repo: 15 letters, starting with 'B' [15]
+   25. A class defined in tests/test_scan.py [12]
+   26. Part of the identifier 'RenderTextTests' in tests/test_render.py [4]
+   27. One of this repository's source modules [9]
+
+Down
+    1. A class defined in tests/test_clues.py [9]
+    2. Referenced 8 times across this repository [9]
+    4. Part of the identifier 'RenderTextTests' in tests/test_render.py [6]
+    5. A class defined in tests/test_layout.py [10]
+    7. Referenced 10 times across this repository [7]
+    9. Part of the identifier 'RepoFacts' in src/crossrepo/scan.py [4]
+   11. An identifier from this repo: 9 letters, starting with 'R' [9]
+   12. A class defined in tests/test_render.py [15]
+   13. An identifier from this repo: 15 letters, starting with 'R' [15]
+   14. A function defined in src/crossrepo/clues.py [9]
+   17. Referenced 9 times across this repository [10]
+   20. Referenced 8 times across this repository [6]
+   24. Class described as 'One named thing found in the repository.' (in src/crossrepo/scan.py) [6]
+

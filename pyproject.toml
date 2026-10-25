@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crossrepo"
+version = "0.1.0"
+description = "Turn any codebase into a crossword puzzle - identifiers, docstrings and file paths become the clues."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "CrossRepo contributors" }]
+keywords = [
+    "crossword", "puzzle", "codebase", "static-analysis",
+    "developer-tools", "team-building", "onboarding",
+]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+    "Topic :: Software Development",
+]
+
+[project.scripts]
+crossrepo = "crossrepo.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
