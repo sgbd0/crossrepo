@@ -15,7 +15,17 @@ from .scan import harvest
 from .words import build_words
 
 
+def _tame_console() -> None:
+    """Never crash or garble on consoles that cannot encode clue text."""
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(errors="replace")
+        except (AttributeError, ValueError):
+            pass
+
+
 def main(argv: list[str] | None = None) -> int:
+    _tame_console()
     parser = argparse.ArgumentParser(
         prog="crossrepo",
         description="Turn a codebase into a crossword puzzle whose clues come from your own code.",

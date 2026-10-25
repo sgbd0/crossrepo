@@ -1,0 +1,2 @@
+# Normalize line endings: LF everywhere, no CRLF churn, no ^M artifacts.
+* text=auto eol=lf

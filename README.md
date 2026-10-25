@@ -2,8 +2,8 @@
 
 **Turn any codebase into a crossword puzzle.**
 
-CrossRepo scans a repository, mines its real identifiers — classes, functions,
-modules, constants — and weaves them into a crossword whose clues come from
+CrossRepo scans a repository, mines its real identifiers - classes, functions,
+modules, constants - and weaves them into a crossword whose clues come from
 your own code: file paths, docstrings, and reference counts. Every answer is a
 name your team types every day.
 
@@ -13,7 +13,7 @@ Zero dependencies. Python 3.10+ standard library only.
 
 New joiners read the docs, skim the tree, and still can't name the five
 classes they will touch every day. A crossword built from the repository's own
-vocabulary is a ten-minute team ritual that makes those names stick — and a
+vocabulary is a ten-minute team ritual that makes those names stick - and a
 reliable icebreaker for hackathons and offsites. Rerun it on CI each week and
 the puzzle evolves with the code.
 
@@ -93,21 +93,21 @@ crossrepo [ROOT] [options]
 --json PATH    also write a JSON export
 ```
 
-Same seed in, same puzzle out — share a seed instead of a file.
+Same seed in, same puzzle out - share a seed instead of a file.
 
 ## How it works
 
-1. **Harvest** — walks the tree, skipping `.git`, `node_modules`, caches and
+1. **Harvest** - walks the tree, skipping `.git`, `node_modules`, caches and
    other noise. Python files are parsed with `ast` for exact symbols; a
    repository without any Python falls back to a language-agnostic tokenizer,
    so any codebase still produces a puzzle.
-2. **Mine words** — ranks identifiers by kind and reference count, adds the
+2. **Mine words** - ranks identifiers by kind and reference count, adds the
    repository name, and splits compound names into fragments
    (`layout_engine` also yields `LAYOUT` and `ENGINE`).
-3. **Write clues** — every answer gets a clue derived from real facts: where
+3. **Write clues** - every answer gets a clue derived from real facts: where
    it is defined, what its docstring says, how often it is referenced. A leak
    filter rewrites any clue that would give the answer away.
-4. **Weave the grid** — a greedy engine crosses words to maximize
+4. **Weave the grid** - a greedy engine crosses words to maximize
    intersections and compactness while enforcing one invariant: *every
    maximal run of letters must exactly be a placed word.* That single rule
    bans accidental merges (`CAR` next to `ARTS` would spell `CART`) and
@@ -120,7 +120,7 @@ Same seed in, same puzzle out — share a seed instead of a file.
 | --- | --- |
 | text | numbered blank grid plus Across/Down clue lists, ASCII-safe everywhere |
 | html | one offline file: typeable grid, clue highlighting, Check and Reveal |
-| json | full puzzle data — `answer`, `clue`, `number`, `row`, `col`, `direction` — for your own renderer |
+| json | full puzzle data - `answer`, `clue`, `number`, `row`, `col`, `direction` - for your own renderer |
 
 ## Tests
 
@@ -137,4 +137,4 @@ PYTHONPATH=src python -m unittest discover -s tests
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
